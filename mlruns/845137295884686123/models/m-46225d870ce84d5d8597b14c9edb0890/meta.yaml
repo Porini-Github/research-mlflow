@@ -1,0 +1,10 @@
+artifact_location: file:///c:/Users/BiavaschiStefano/OneDrive%20-%20PORINI%20Srl/HOME/1_other_projects/MLOps_formazione/research-mlflow/mlruns/845137295884686123/models/m-46225d870ce84d5d8597b14c9edb0890/artifacts
+creation_timestamp: 1756883697928
+experiment_id: '845137295884686123'
+last_updated_timestamp: 1756883701126
+model_id: m-46225d870ce84d5d8597b14c9edb0890
+model_type: null
+name: model
+source_run_id: 683deda7e0b2488d8d643a9ab5aa870b
+status: 2
+status_message: null

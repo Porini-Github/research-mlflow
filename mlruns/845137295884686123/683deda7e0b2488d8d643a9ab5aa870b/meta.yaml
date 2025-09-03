@@ -1,0 +1,14 @@
+artifact_uri: file:///c:/Users/BiavaschiStefano/OneDrive%20-%20PORINI%20Srl/HOME/1_other_projects/MLOps_formazione/research-mlflow/mlruns/845137295884686123/683deda7e0b2488d8d643a9ab5aa870b/artifacts
+end_time: 1756883701232
+entry_point_name: ''
+experiment_id: '845137295884686123'
+lifecycle_stage: active
+run_id: 683deda7e0b2488d8d643a9ab5aa870b
+run_name: crawling-shark-375
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1756883697747
+status: 3
+tags: []
+user_id: BiavaschiStefano

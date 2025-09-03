@@ -1,0 +1,8 @@
+pandas
+mlflow
+scikit-learn
+pre-commit
+
+## Esegui per il pre-commit:
+# pre-commit install
+# pre-commit autoupdate

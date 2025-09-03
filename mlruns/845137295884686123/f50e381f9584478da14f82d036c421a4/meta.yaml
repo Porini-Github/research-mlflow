@@ -1,0 +1,14 @@
+artifact_uri: file:///c:/Users/BiavaschiStefano/OneDrive%20-%20PORINI%20Srl/HOME/1_other_projects/MLOps_formazione/research-mlflow/mlruns/845137295884686123/f50e381f9584478da14f82d036c421a4/artifacts
+end_time: 1756883661988
+entry_point_name: ''
+experiment_id: '845137295884686123'
+lifecycle_stage: active
+run_id: f50e381f9584478da14f82d036c421a4
+run_name: stylish-sheep-399
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1756883658536
+status: 3
+tags: []
+user_id: BiavaschiStefano

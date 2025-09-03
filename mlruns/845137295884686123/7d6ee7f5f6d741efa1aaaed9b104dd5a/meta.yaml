@@ -1,0 +1,14 @@
+artifact_uri: file:///c:/Users/BiavaschiStefano/OneDrive%20-%20PORINI%20Srl/HOME/1_other_projects/MLOps_formazione/research-mlflow/mlruns/845137295884686123/7d6ee7f5f6d741efa1aaaed9b104dd5a/artifacts
+end_time: 1756883595850
+entry_point_name: ''
+experiment_id: '845137295884686123'
+lifecycle_stage: active
+run_id: 7d6ee7f5f6d741efa1aaaed9b104dd5a
+run_name: receptive-mule-387
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1756883590618
+status: 3
+tags: []
+user_id: BiavaschiStefano
