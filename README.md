@@ -23,7 +23,7 @@ Questo progetto è una demo che ha l'obiettivo di spiegare le funzionalità base
 
 ## Flusso di lavoro
 
-Tutto il flusso di lavoro è contenuto nel notebook `00_process.ipynb`, dove è possibile scegliere se eseguire l'esempio con il dataset *iris* o con il dataset *breast cancer* tramite il parametro "example_name"
+Tutto il flusso di lavoro è contenuto nel notebook `main.ipynb`, dove è possibile scegliere se eseguire l'esempio con il dataset *iris* o con il dataset *breast cancer* tramite il parametro "example_name"
 
 ## Avvio della UI di MLflow
 
