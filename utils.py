@@ -71,7 +71,6 @@ def load_dataset(dataset_name):
         # Split train/test
         X = df[iris.feature_names]
         y = df['target']
-        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.5, random_state=42)
 
     elif dataset_name == "breast_cancer_dataset":
         # Carichiamo il dataset Breast Cancer
@@ -85,9 +84,10 @@ def load_dataset(dataset_name):
         # Split train/test
         X = df[cancer.feature_names]
         y = df['target']
-        X_train, X_test, y_train, y_test = train_test_split(
-            X, y, test_size=0.3, random_state=42
-        )
+
+    X_train, X_test, y_train, y_test = train_test_split(
+        X, y, test_size=0.3, random_state=42
+    )
 
     return X_train, X_test, y_train, y_test, dataset_version, dataset_path, df
 
