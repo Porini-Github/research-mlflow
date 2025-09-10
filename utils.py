@@ -14,6 +14,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 
 import mlflow
 import mlflow.sklearn
+from mlflow.models.signature import infer_signature
 
 import platform
 
@@ -180,18 +181,29 @@ def train_and_log_model(model_name="IrisClassifier",
             # Log degli artifacts (modello + env)
             mlflow.log_artifacts(tmpdir, artifact_path="model_package")
 
-        # 5. Log del modello e dell’ambiente
-        mlflow.sklearn.log_model(model, "model", registered_model_name=model_name)
-
+        signature = infer_signature(X_train, model.predict(X_train))
         conda_env = mlflow.sklearn.get_default_conda_env()
-        mlflow.sklearn.log_model(
-            sk_model=model,
-            artifact_path="model",
-            conda_env=conda_env
-        )
+        # 5. Log del modello e dell’ambiente
+
+        mlflow.sklearn.log_model(sk_model=model,
+                                 name="model",
+                                 conda_env=conda_env,
+                                 registered_model_name=model_name,
+                                 signature=signature,
+                                 input_example=X_train.head(2))
+
 
         # N.B. Non per forza tutti i modelli vanno registrati.
         # Volendo, si può decidere di non registrare i modelli dentro questo codice, ma decidere a posteriori quali registrare e quali no
+
+        # Alternativa senza registrazione del modello
+        mlflow.sklearn.log_model(
+            sk_model=model,
+            name="model",
+            conda_env=conda_env,
+            signature=signature,
+            input_example=X_train.head(2),
+        )
 
         # 6. Log di due righe di esempio dal dataset
         sample_input = X_train.head(2).copy()
