@@ -212,3 +212,8 @@ __marimo__/
 datasets/
 mlruns/
 mlruns
+
+# file temp azure machine learning
+.amlignore*
+.amlignore.*
+.amlignore/*
