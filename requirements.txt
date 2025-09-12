@@ -2,6 +2,8 @@ pandas
 mlflow
 scikit-learn
 pre-commit
+azure-identity
+azure-ai-ml
 
 ## Esegui per il pre-commit:
 # pre-commit install

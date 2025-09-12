@@ -217,3 +217,4 @@ mlruns
 .amlignore*
 .amlignore.*
 .amlignore/*
+config/secret.py
